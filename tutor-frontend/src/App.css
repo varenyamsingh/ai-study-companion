@@ -1,0 +1,74 @@
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #2c3e50;
+  color: white;
+}
+.quiz-btn {
+  background: #e67e22;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.chat-window {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  background: #f4f7f6;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.message-bubble {
+  padding: 12px 18px;
+  border-radius: 20px;
+  max-width: 70%;
+  line-height: 1.4;
+}
+.user {
+  align-self: flex-end;
+  background: #3498db;
+  color: white;
+  border-bottom-right-radius: 2px;
+}
+.tutor {
+  align-self: flex-start;
+  background: #ecf0f1;
+  color: #2c3e50;
+  border-bottom-left-radius: 2px;
+  white-space: pre-wrap;
+}
+.input-area {
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  background: white;
+  border-top: 1px solid #ddd;
+}
+input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+button {
+  padding: 10px 20px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

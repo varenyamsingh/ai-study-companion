@@ -1,0 +1,46 @@
+==========================================================
+🎓 AI SMART TUTOR - PROJECT OVERVIEW
+==========================================================
+
+DESCRIPTION:
+An AI-powered learning assistant that uses RAG (Retrieval 
+Augmented Generation) to help students study. It reads 
+PDF notes, answers questions, and generates quizzes using 
+the Groq LPU for near-instant responses.
+
+TECH STACK:
+- Backend: Python, FastAPI, LangChain, LangGraph, ChromaDB
+- Frontend: React (Vite), Axios
+- AI Models: Llama 3.1 8B (Groq), all-MiniLM-L6-v2 (Local Embeddings)
+
+==========================================================
+🚀 HOW TO RUN THE PROJECT
+==========================================================
+
+STEP 1: PREPARATION
+-------------------
+1. Ensure your '.env' file in the root folder has:
+   GROQ_API_KEY=your_key_here
+2. Ensure your PDF is named 'my_notes.pdf' and is in the root folder.
+
+STEP 2: RUN THE BACKEND (Python)
+--------------------------------
+1. Open a terminal in the root 'llm project' folder.
+2. Activate your virtual environment:
+   venv\Scripts\activate  (Windows)
+   source venv/bin/activate (Mac/Linux)
+3. Start the API server:
+   uvicorn api:app --reload
+4. Leave this terminal open. Look for "Uvicorn running on http://127.0.0.1:8000"
+
+STEP 3: RUN THE FRONTEND (React)
+--------------------------------
+1. Open a SECOND terminal in the 'tutor-frontend' folder.
+2. Start the Vite development server:
+   npm run dev
+3. Open your browser to the URL shown (usually http://localhost:5173).
+
+USAGE:
+- Type normally to ask questions about your notes.
+- Click the "Take Quiz" button to generate a custom quiz.
+==========================================================
